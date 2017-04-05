@@ -9,32 +9,41 @@
 
 <script type="text/javascript">
 	
-var x = "hello world";
+var x = "hello world"; //variable
 
-console.log(x);
+console.log(x); //imprime en consola 
 
-var book = {topic: "javascript", fat: true};
+var book = {topic: "javascript", fat: true}; //objeto 
 
-console.log(book.topic);
+console.log(book.topic); //accediendo a un objeto 
 
-console.log(book["fat"]);
+console.log(book["fat"]); //otra forma de acceder a un objeto 
 
-var primes = [2,3,5,7];
+var primes = [2,3,5,7];  //Arreglo
 
-console.log(primes[primes.length-1]);
+console.log(primes[primes.length-1]); //Accediendo a un elemento del arreglo 
 
-console.log(primes[0] + primes[1]);
+console.log(primes[0] + primes[1]); // sumando elementos del arreglo 
 
-function factorial(n) {
-	var p = 1;
 
-	for (var i = 2; i <= n; i++)  
+/*
+El factorial de un entero positivo n, el factorial de n o n factorial se define en principio como el producto de todos los números enteros positivos desde 1 (es decir, los números naturales) hasta n. Por ejemplo, 5 ! = 1 × 2 × 3 × 4 × 5 = 120.
+*/ 
+
+
+function factorial(n) { 
+	var p = 1; //inicializa la variable p para los incrementos 
+	for (var i = 2; i <= n; i++)  {
+		// i = 2,3,4......
 		p *= i;
-	
+		//multiplica la variable P x i y la guarda para el siguiente numero i
+	}
 		return p; 
 }
 
-console.log (factorial(4));
+// var i es igual a 2 
+
+console.log (factorial(4)); //imrpime valores
 console.log (factorial(5));
 console.log (factorial(6));
 
